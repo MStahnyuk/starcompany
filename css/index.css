@@ -47,7 +47,7 @@
 .errorMessage {
     position: absolute;
     font: bold 11px "Arial";
-    padding: 12px 10px 15px;
+    padding: 12px 5px 15px;
     background: #e22a32;
     border-radius: 4px;
     color: white;
@@ -232,7 +232,7 @@
     position: absolute;
     top: 40px;
     left: calc(100% + 30px);
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .hidden {
