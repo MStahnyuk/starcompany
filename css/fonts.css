@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ProximaNovaLight";
+    src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}

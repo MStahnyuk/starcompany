@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <title>StarCompany</title>
+</head>
+<body class="body">
+    <header class="header container">
+        <div class="logoWrap">
+            <img src="./images/logo.png" width="234" height="64" class="logo" alt="Logo">
+        </div>
+        <form class="headerForm" name="login" onsubmit="handleLogin(); return false;">
+            <label class="headerForm_label">
+                <input class="headerForm_input" type="text" placeholder="Email" name="email" onfocus="handleFocus(event)" >
+            </label>
+            <div class="headerForm_passwordWrap">
+                <label class="headerForm_label">
+                    <input class="headerForm_input" type="password" placeholder="Password" name="password" onfocus="handleFocus(event)" >
+                </label>
+                <a class="headerForm_link" href="#">Forgot your password?</a>
+            </div>
+            <button class="button buttonPrimary" type="submit">Log in</button>
+        </form>
+    </header>
+    <div class="container">
+        <h1>
+            <span>StarCompany DESIGNS, MANUFACTURES AND</span>
+            Launches Advanced Rockets and  Spacecrafts
+        </h1>
+        <div class="mainFormWrap">
+            <form id="main-form" class="mainForm" name="registration" onsubmit="handleSubmit(); return false;">
+                <div id="carousel" class="mainForm_steps">
+                    <!-- STEP 1 -->
+                    <div class="step mainForm_step active">
+                        <label class="mainForm_label">
+                            Who are you?
+                            <div class="select mainForm_select">
+                                <input class="selectInput mainForm_optionMain" onclick="onToggleOptions(event)" value="" name="profession" type="button">
+                                <div class="selectOptionsContainer mainForm_options"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- STEP 2 -->
+                    <div class="step mainForm_step">
+                        <label class="mainForm_label">
+                            What is your age?
+                            <div class="select mainForm_select">
+                                <input class="selectInput mainForm_optionMain" onclick="onToggleOptions(event)" value="11" name="age" type="button">
+                                <div  class="selectOptionsContainer mainForm_options"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- STEP 3 -->
+                    <div class="step mainForm_step">
+                        <label class="mainForm_label">
+                            I am from
+                            <input class="mainForm_input" type="text" placeholder="Location" name="location" onfocus="handleFocus(event)">
+                        </label>
+                        <p class="mainForm_wrongMessage">
+                            <span>E.g.: New Roads or 70760</span><br>
+                            We don’t use postal addresses to contact members directly!
+                        </p>
+                    </div>
+                    <!-- STEP 4 -->
+                    <div class="step mainForm_step">
+                        <label class="mainForm_label">
+                            Your email adress
+                            <input class="mainForm_input" type="text" placeholder="Input your email" name="email" onfocus="handleFocus(event)">
+                        </label>
+                    </div>
+                    <!-- STEP 5 -->
+                    <div class="step mainForm_step">
+                        <label class="mainForm_label">
+                            Create your password
+                            <input class="mainForm_input" type="password" placeholder="Password" name="password"  onfocus="handleFocus(event)">
+                        </label>
+                        <p class="mainForm_wrongMessage">By clicking the button above you agree to our
+                            <a href="#">Terms of Use</a>
+                            and <a href="#">Privacy Policy</a> including use of cookies and to receive newsletters,
+                            account updates and offers sent by StarCompany.</p>
+                    </div>
+                </div>
+                <div class="history" id="history">
+                    <span class="historyItem selected"></span>
+                    <span class="historyItem"></span>
+                    <span class="historyItem"></span>
+                    <span class="historyItem"></span>
+                    <span class="historyItem"></span>
+                </div>
+                <button disabled class="buttonBack" type="button" onclick="goBack()">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="17px">
+                        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M10.12,15.580 L8.580,17.12 L1.499,9.932 L1.419,10.12 L0.12,8.580 L0.67,8.499 L0.12,8.419 L1.419,6.987 L1.499,7.67 L8.580,0.12 L10.12,1.419 L2.931,8.499 L10.12,15.580 Z"/>
+                    </svg>
+                </button>
+                <button id="button-next" class="button buttonPrimary arrowRight" type="button" onclick="goNext()">Next step</button>
+                <button id="button-registration" class="button buttonSecondary checkMark hidden" type="submit">Start now</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>

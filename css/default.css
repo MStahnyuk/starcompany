@@ -1,0 +1,40 @@
+html {
+    min-height: 100vh;
+}
+
+a {
+    font: bold 11px "Arial";
+    color: white;
+}
+
+input {
+    color: black;
+    font: bold 14px "Arial";
+    width: 200px;
+    height: 40px;
+    padding: 0 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+}
+
+h1 {
+    margin-top: 242px;
+    font-size: 36px;
+    font-family: "ProximaNovaLight";
+    color: white;
+    letter-spacing: 3.8px;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 38px;
+    font-family: "ProximaNovaBold";
+    text-transform: uppercase;
+    color: #83a6e4;
+    letter-spacing: normal;
+}
+
+input::placeholder {
+    color: #6e747c;
+}

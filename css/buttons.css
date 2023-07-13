@@ -1,0 +1,81 @@
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: auto;
+    opacity: 0.5;
+}
+
+
+
+.button {
+    padding: 0 20px;
+    height: 40px;
+    font: bold 13px "Arial";
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    transition: box-shadow 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+.button:hover {
+    transition-timing-function: ease-out;
+}
+
+.buttonPrimary {
+    background: rgb(88,102,234);
+    background: linear-gradient(61deg, rgba(88,102,234,1) 0%, rgba(43,160,234,1) 100%);
+}
+
+.buttonPrimary.arrowRight:after {
+    content: url("../images/arrowRight.png");
+    margin-left: 13px;
+}
+
+.buttonPrimary:hover {
+    -webkit-box-shadow: 0 1px 17px 0 rgba(43,160,234,0.66);
+    -moz-box-shadow: 0 1px 17px 0 rgba(43,160,234,0.66);
+    box-shadow: 0 1px 17px 0 rgba(43,160,234,0.66);
+}
+
+.buttonSecondary {
+    padding-left: 17px;
+    padding-right: 13px;
+    background: #3cd342;
+    background: linear-gradient(61deg, #4caf50 0%, #3cd342 100%);
+    opacity: 1;
+}
+
+.buttonSecondary:hover:enabled {
+    -webkit-box-shadow: 0 1px 17px 0 #4caf50;
+    -moz-box-shadow: 0 1px 17px 0 #4caf50;
+    box-shadow: 0 1px 17px 0 #4caf50;
+}
+
+.buttonSecondary.checkMark:after {
+    content: url("../images/checkMark.png");
+    margin-left: 13px;
+}
+
+.buttonBack {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity ease-in 0.2s;
+    opacity: 0.5;
+    position: absolute;
+    left: -70px;
+    top: 40px;
+}
+
+.buttonBack:hover:enabled {
+    transition-timing-function: ease-out;
+    opacity: 1;
+}
